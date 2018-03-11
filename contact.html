@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<style>
+html,body{
+		margin: 0px;
+	}
+
+ul{
+		list-style-type: none;
+		margin:0;
+		padding:0;
+		overflow: hidden;
+		background-color: #333;
+	}
+
+	li{
+		float: left;
+	}
+
+	li a{
+		display: block;
+		color: white;
+		text-align: center;
+		margin: 5px;
+		padding-left: 12px 80px;
+		text-decoration:  none;
+
+	}
+
+body{
+	
+	background-color: #87CEFA; 
+}
+
+
+.info{
+	margin: 30px;
+	padding: 250px;
+	width: 50%;
+	text-align: left;
+	/*background-image: url(puppy.gif);
+	background-repeat: no-repeat;
+	background-position: center;*/
+	/*background width: 40px;*/
+	/*background-size: 51% 41% ;*/
+	/*610px 350px;*/
+
+}
+
+fieldset{
+	background: url(puppy.gif);
+	color: black;
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%, 100%;
+	width: 600px;
+}
+
+
+@media only screen and (width: 400px){
+		.info{ width:100%; }
+	}
+
+</style>
+
+
+
+<body>
+<ul>
+		<li><a href= "Home.html"> Home </a></li>
+		<li><a href= "AboutMe.html">About Me </a></li>
+		<li><a href= "IMAGES.html">Gallery </a></li>
+		<li><a href= "Videos.html">Videos </a></li>
+		<li><a href= "Noray.pdf" target="_blank">Resume</a></li>
+		<li><a href= "Contact.html">Contact</a></li>
+</ul>
+
+
+<div class="info">
+	<form method=post action=mailto:paul.nathan7@gmail.com>
+		
+		<fieldset>
+			<legend> Contact Info </legend>
+			<P> First Name:
+	<br><input name="first" type="text" size ="30" max length="100"> </p>
+			<p> Last Name:
+	<br><input name="last" type="text" size ="30" max length="100"> </p>
+			<p> Your Email:
+	<br><input name="email" type="text" size ="30" max length="100"> </p>
+			<P> Type In Your Message:
+	<BR><TEXTAREA NAME="learned" ROWS="5" COLS="30"></TEXTAREA></P>
+	<P><INPUT TYPE="submit" VALUE="Send">
+	<INPUT TYPE="reset" VALUE="Reset"></P>
+		</fieldset>
+
+	</form>
+
+</div>
+
+
+</body>
+</html>

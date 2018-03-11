@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Gallery</title>
+</head>
+
+
+<style type="text/css">
+	body{
+		background-color: lightblue;
+	}
+
+	.image{
+		background-color: white;
+		overflow: auto;
+		padding: 6px;
+		float: left;
+		width: 30%;
+	}
+
+	.pic {
+		border: 5px solid black;
+
+
+	}
+
+	.pic img{
+		width: 100%;
+		height: auto;
+	
+	}
+	.pic img: hover{
+		fill: grayscale(50%);
+	}
+	.desc{
+		padding: 15px;
+		text-align: center;
+	}
+
+	
+	
+	*{box-sizing:border-box;}
+
+	@media only screen and (width: 700px){
+		.image{ width:100%; }
+	}
+
+</style>
+
+<body>
+
+
+<div class = "image">
+	<div class ="pic">
+		<a href = "images/IMG_2061.jpg">
+			<img src="images/IMG_2061.jpg" width ="200" height="200">
+		</a>
+	<div class="desc"> This is a dog</div> 
+	</div>	
+</div>
+
+<div class = "image">
+	<div class ="pic">
+		<a href = "images/IMG_2061.jpg">
+			<img src="images/IMG_2061.jpg" width ="600" height="400">
+		</a>
+	<div class="desc"> This is a dog</div> 
+	</div>	
+</div>
+
+</body>
+</html>
